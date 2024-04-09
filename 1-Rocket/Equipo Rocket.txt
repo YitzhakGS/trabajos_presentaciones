@@ -1,0 +1,46 @@
+CREATE TABLE usuarios (
+   -> id INT(7) NOT NULL PRIMARY KEY,
+   -> nombre VARCHAR(255),
+   -> correo VARCHAR(255), 
+  );
+
+
+
+CREATE TABLE vehiculos(
+   -> patente CHAR(6) NOT NULL,
+   -> tipo CHAR(4),
+   -> horallegada TIME NOT NULL,
+   -> horasalida TIME,
+   -> PRIMARY KEY(patente,horallegada)
+);
+
+
+
+mysql> create table EMPLEADO (
+-> IdEmpleado INT AUTO_ INCREMENT PRIMARY KEY,
+-> primerNombre VARCHAR(10),
+-> segundoNombre VARCHAR(10),
+-> apellidop VARCHAR(20),
+-> apellidoM VARCHAR(20),
+-> edad INT);
+
+
+
+
+create table EMPRESA (
+-> id INT AUTO_ INCREMENT PRIMARY KEY NOT NULL, 
+-> ciudad VARCHAR(25) NOT NULL,
+-> pais VARCHAR(25) NOT NULL,
+-> telefono VARCHAR(10) NOT NULL)
+AUTO INCREMENT=20;
+
+
+mysql> CREATE TABLE ESTUDIANTE (
+-> matricula INT AUTO_INCREMENT PRIMARY KEY COMMENT 'id_del_alumno'
+-> carrera VARCHAR(20),
+-> promedio INT NOT NULL,
+-> grupo INT);
+
+
+
+DROP TABLE ESTUDIANTE;

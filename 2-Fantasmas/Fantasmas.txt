@@ -1,0 +1,9 @@
+create table integrantes(
+id INT PRIMARY KEY,
+nombre VARCHAR(40),
+edad INT
+);
+
+REPLACE INTO integrantes (id, nombre, edad) VALUES (1,Daniel,19);
+
+update integrantes set edad='20';

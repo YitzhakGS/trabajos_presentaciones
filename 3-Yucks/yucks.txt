@@ -1,0 +1,27 @@
+yucks
+
+create table granCiudad(
+    -> id INT PRIMARY KEY,
+    -> nombre VARCHAR(100),
+    -> origen VARCHAR(100),
+    -> fecha DATE);
+
+
+INSERT INTO granCiudad(id, nombre, origen, fecha) VALUES(
+    -> 2,"madrid","ciudad iberia","1111-01-02"),
+    -> (3,"valencia","ciudad ierica","3314-01-03"),
+    -> (4,"zaragoza","ceaser augusta",NULL),
+    -> (5,"bilboa","ciudad iberica",NULL),
+    -> (6,"Malaga","ciudad iberica", NULL);
+
+delete from granCiudad order by nombre ASC LIMIT 2;
+
+select * from granCiudad order by nombre ASC;
+
+select * from granCiudad order by fecha desc;
+
+truncate granCiudad;
+
+
+
+
